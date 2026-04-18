@@ -18,6 +18,7 @@ public class SpringDataJpaApplication {
         Student s1 = context.getBean(Student.class);
         Student s2 = context.getBean(Student.class);
         Student s3 = context.getBean(Student.class);
+        Student s4 = context.getBean(Student.class);
 
 //        s1.setRollNo(100);
 //        s1.setName("Dilusha");
@@ -25,7 +26,7 @@ public class SpringDataJpaApplication {
 //
 //        s2.setRollNo(101);
 //        s2.setName("Kamal");
-//        s2.setMark(88);
+//        s2.setMark(82);
 //
 //        s3.setRollNo(102);
 //        s3.setName("Hashan");
@@ -35,7 +36,15 @@ public class SpringDataJpaApplication {
 //        repo.save(s2);
 //        repo.save(s3);
 
-        System.out.println(repo.findByMarkGreaterThan(85));
+//        s4.setRollNo(103);
+//        s4.setName("Nimal");
+//        s4.setMark(76);
+
+        // Update Data
+        //repo.save(s4);
+
+        // Delete Data
+        repo.delete(s4);
 
     }
 
